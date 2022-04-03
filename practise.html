@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arithmetic</h2>
+
+<p id="demo"></p>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+</br>
+</br>
+</br>
+
+Enter the First number : <input id="first">
+</br></br>
+Enter the Second number: <input id="second">
+</br></br>
+<button onclick="add()">Add</button>
+<button onclick="sub()">Sub</button>
+<button onclick="mul()">Mul</button>
+<button onclick="div()">Div</button>
+</br></br>
+<input id="answer">
+
+
+<script>
+
+    
+let x = 5;
+let y = 2;
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+function sub(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a - b;
+document.getElementById("answer").value= c;
+}
+function mul(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a * b;
+document.getElementById("answer").value= c;
+}
+function div(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a / b;
+document.getElementById("answer").value= c;
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
